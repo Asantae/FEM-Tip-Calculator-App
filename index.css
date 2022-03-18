@@ -1,0 +1,95 @@
+/* changes margin and padding for the entire document to zero */
+* {
+    font-family: 'Space Mono', monospace, Arial;
+    font-weight: 700;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsla(185, 41%, 84%, 1);
+
+}
+
+/* Creates the outer most container for the inner content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+/* correctly sizes, creates a shadow, adjusts edges of the outermost container
+ and creates the inner containers */
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    height: 800px;
+    width: 800px;
+    border-radius: 25px;
+    box-shadow: 0px 8px 15px 0px rgb(196 206 221);
+    
+}
+
+/* creates two boxes inside of box 'content' */
+.inCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background:black;
+    height: 350px;
+    width: 100%;
+    
+}
+
+.inCont2 {
+    background: hsla(183, 100%, 15%, 1);
+    height: 350px;
+    width: 350px;
+    border-radius: 25px;
+
+}
+
+/* creates the boxes for the forms to fit in*/
+.inMost {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: green;
+    height: 100px;
+    width: 350px;
+
+}
+
+
+.userIn {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+/*  */
+
+ul {
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+label {
+    font-size: 11px;
+}
+
+input, .label {
+    font-size: 24px;
+}
+

@@ -1,38 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-</head>
-  <body>
-
-    Bill
-
-    Select Tip %
-    5%
-    10%
-    15%
-    25%
-    50%
-    Custom
-
-    Number of People
-
-    Tip Amount
-    / person
-
-    Total
-    / person
-
-    Reset
-    
-   <!--<div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Asantae Shelton</a>.
-    </div> -->
-  </body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="index.css">
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+    <body>
+  <span></span>
+  <div class="container">
+    <div class="content">
+      <div class="inCont">
+        <div class="inMost">
+          <div class="userIn">
+            <label for="bill">Bill</label>
+            <input type="num" name="bill" id="bill" placeholder="$"></input>
+          </div>
+        </div>
+        <div class="inMost"> 
+          <div class="userIn">
+            <label for="percTip">Select Tip %</label>
+            <div class="perc">
+              <ul>
+                <li>
+                  <label class="label"><input type="radio" id="prePerc" name="percTip" value="5%" style="display:none;">5%</label>
+                  
+                </li>
+                <li>
+                  <input type="radio" id="prePerc" name="percTip" value="10%">
+                  
+                </li>
+                <li>
+                  <input type="radio" id="prePerc" name="percTip" value="15%">
+                  
+                </li>
+                <li>
+                  <input type="radio" id="prePerc" name="percTip" value="25%">
+                  
+                </li>
+                <li>
+                  <input type="radio" id="prePerc" name="percTip" value="50%">
+                  
+                </li>
+                <li>
+                  <input type="number" id="customPerc" name="percTip" placeholder="Custom">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="inMost">
+          <div class="userIn">
+            <label for="num">Number of People</label>
+            <input type="num" name="people" id="people" placeholder="logo"></input>
+          </div>
+        </div>
+      </div>
+        <div class="inCont">
+            <div class="inCont2">
+              
+            </div>
+        </div>
+    </div>
+  </div>
+      
+    <!--<div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Asantae Shelton</a>.
+      </div> -->
+    </body>
 </html>
