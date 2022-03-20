@@ -7,71 +7,75 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="main.css">
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
-  <body>
-  <span></span>
-  <div class="container">
-    <div class="content">
-      <div class="inCont">
-        <div class="inMost">
-          <div class="userIn">
-            <label for="bill">Bill</label>
-            <input type="number" name="bill" id="num" placeholder="$"></input>
+  <main>
+    <body>
+      <span class="logo-header">
+        <img src="images/logo.svg" alt="Splitter Logo">
+      </span>
+    <div class="outer-container">
+      <div class="container">
+        <div class="inner-container1">
+          <div class="inMost">
+            <div class="userIn">
+              <label for="bill">Bill</label>
+              <label class="logo"><input type="number" name="bill" id="num" placeholder="00.00"><img src="images/icon-dollar.svg"></input></label>
+            </div>
+          </div>
+          <div class="inMost"> 
+            <div class="userIn">
+              <label for="percTip">Select Tip %</label>
+              <div class="perc">
+                <ul>
+                  <li>
+                    <label class="percent"><input type="radio" id="prePerc" name="percTip" value="5%" style="display:none;">5%</label>
+                    
+                  </li>
+                  <li>
+                    <label class="percent"><input type="radio" id="prePerc" name="percTip" value="10%" style="display:none;">10%</label>
+                    
+                  </li>
+                  <li>
+                    <label class="percent"><input type="radio" id="prePerc" name="percTip" value="15%" style="display:none;">15%</label>
+                    
+                  </li>
+                  <li>
+                    <label class="percent"><input type="radio" id="prePerc" name="percTip" value="25%" style="display:none;">25%</label>
+                    
+                  </li>
+                  <li>
+                    <label class="percent"><input type="radio" id="prePerc" name="percTip" value="50%" style="display:none;">50%</label>
+                    
+                  </li>
+                  <li>
+                    <input type="number" id="customPerc" name="percTip" placeholder=""><label class="custom-tip">Custom</label>
+                  
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="inMost">
+            <div class="userIn">
+              <label for="people">Number of People</label>
+              <label class="logo"><input type="number" name="people" id="num" placeholder="0"><img src="images/icon-person.svg"></input></label>
+            </div>
           </div>
         </div>
-        <div class="inMost"> 
-          <div class="userIn">
-            <label for="percTip">Select Tip %</label>
-            <div class="perc">
-              <ul>
-                <li>
-                  <label class="percent"><input type="radio" id="prePerc" name="percTip" value="5%" style="display:none;">5%</label>
-                  
-                </li>
-                <li>
-                  <label class="percent"><input type="radio" id="prePerc" name="percTip" value="10%" style="display:none;">10%</label>
-                  
-                </li>
-                <li>
-                  <label class="percent"><input type="radio" id="prePerc" name="percTip" value="15%" style="display:none;">15%</label>
-                  
-                </li>
-                <li>
-                  <label class="percent"><input type="radio" id="prePerc" name="percTip" value="25%" style="display:none;">25%</label>
-                  
-                </li>
-                <li>
-                  <label class="percent"><input type="radio" id="prePerc" name="percTip" value="50%" style="display:none;">50%</label>
-                  
-                </li>
-                <li>
-                  <input type="number" id="customPerc" name="percTip" placeholder="Custom">
+          <div class="inner-container1">
+              <div class="inner-container2">
                 
-                </li>
-              </ul>
-            </div>
+              </div>
           </div>
-        </div>
-        <div class="inMost">
-          <div class="userIn">
-            <label for="num">Number of People</label>
-            <input type="number" name="people" id="num" placeholder="logo"></input>
-          </div>
-        </div>
       </div>
-        <div class="inCont">
-            <div class="inCont2">
-              
-            </div>
-        </div>
     </div>
-  </div>
-      
-    <!--<div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Asantae Shelton</a>.
-      </div> -->
-  </body>
+        
+      <!--<div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="#">Asantae Shelton</a>.
+        </div> -->
+    </body>
+  </main>
 </html>
