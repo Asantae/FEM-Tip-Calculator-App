@@ -1,4 +1,4 @@
-/* changes margin and padding for the entire document to zero */
+/* changes margin and padding for the entire document */
 * {
     font-family: 'Space Mono', monospace, Arial;
     font-weight: 700;
@@ -16,7 +16,7 @@ body {
     min-height: 100vh;
 }
 
-/* adjusts positioning of 'splitter' svg */
+/* adjusts positioning of 'splitter' img/svg */
 .logo-header {
     display: flex;
     flex-direction: column;
@@ -46,7 +46,7 @@ body {
     
 }
 
-/* creates two containers inside of box 'content' */
+/* adjusts two inner containers and aligns content inside using flexbox */
 .inner-container1 {
     display: flex;
     flex-direction: column;
@@ -54,7 +54,6 @@ body {
     align-items: center;
     height: 500px;
     width: 100%;
-    
 }
 
 .inner-container2 {
@@ -70,7 +69,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 300px;
+    width: 350px;
 
 }
 
@@ -85,7 +84,7 @@ input::-webkit-inner-spin-button {
 the correct attributes, and also adjusts additional content/details */
 
 ul {
-    list-style-type: none;
+    list-style: none;
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
@@ -97,26 +96,35 @@ li {
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+
 }
 
-#customPerc {
+/* removes all borders/outlines from input field,
+also changes color and font size of input field text */
+.customPerc {
+    color: hsla(183, 100%, 15%, 1);
     text-align: right;
+    font-size: 20px;
     height: 45px;
-    width: 90px;
+    width: 110px;
     border-radius: 4px;
     border: none;
     outline: none;
     background: hsla(203, 50%, 97%, 1);
+    padding-right: 18px;
 }
 
-#num {
+.num {
     text-align: right;
+    font-size: 20px;
+    color: hsla(183, 100%, 15%, 1);
     height: 45px;
-    width: 300px;
+    width: 350px;
     border-radius: 4px;
     border: none;
     outline: none;
     background: hsla(203, 50%, 97%, 1);
+    padding-right: 13px;
     
 }
 
@@ -134,31 +142,132 @@ li {
     padding-top: 3px;
 }
 
-.custom-tip{
-    position:absolute;
-
-}
-
-
+/* Adjusts size and color of the 3 left labels (bill, tip%, and num-of-ppl) */
 label {
     color: hsla(18, 6%, 43%, 1);
     font-size: 16px;
 }
 
-input {
-    font-size: 18px;
-
+.zero-label {
+    color: transparent;
 }
 
 .percent {
     background: hsla(183, 100%, 15%, 1);
     height: 45px;
-    width: 90px;
+    width: 110px;
     border-radius: 4px;
     color: white;
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
+    padding-top: 4px;
+    transition: 0.2s;
 
 }
 
+/* Adjust active/focus states of the input fields */
+#bill {
+    outline: transparent solid 3px;
+    transition: all 0.4s linear;
 
+}
+
+#bill:hover, #bill:focus {
+    outline-color:hsla(171, 71%, 77%, 1);
+}
+
+#custom {
+    outline: transparent solid 3px;
+    transition: all 0.4s linear;
+
+}
+
+#custom:hover, #custom:focus {
+    outline-color:hsla(171, 71%, 77%, 1);
+}
+
+#people {
+    outline: transparent solid 3px;
+    transition: all 0.4s linear;
+
+}
+
+#people:hover, #people:focus {
+    outline-color:hsla(171, 71%, 77%, 1);
+}
+
+/* Adjust active and focus states for radio inputs */
+
+.percent:hover {
+    background-color: hsla(173, 60%, 77%, 1);
+    color: hsla(183, 100%, 15%, 1);
+}
+
+input:checked + label {
+    background-color: hsla(172, 67%, 45%, 1);
+    color: hsla(183, 100%, 15%, 1);
+}
+
+/********** NEED TO FINISH ERROR MESSAGE FOR NUMBER OF PEOPLE *********/
+
+/*This section adjusts the divs and content affecting the right side or 'inner-content2' */
+.results {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 400px;
+    height: 250px;
+    
+    padding-top: 40px;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 75px;
+    
+    padding: 0 30px 0 30px;
+
+}
+
+/*this creates and adjust the button */
+
+.reset-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+button {
+    height: 45px;
+    width: 340px;
+    color: hsla(183, 100%, 15%, 1);
+    font-size: 18px;
+    background-color: hsla(172, 67%, 45%, 1);
+    border-radius: 4px;
+    transition: .1s;
+    border: none;
+}
+
+span {
+    font-size: 17px;
+}
+.person {
+    font-size: 15px;
+    color: hsla(173, 60%, 77%, 1);
+}
+
+button:hover {
+    background-color: hsla(173, 60%, 77%, 1);
+}
+
+output {
+    color: hsla(172, 67%, 45%, 1);
+    font-size: 45px;
+}

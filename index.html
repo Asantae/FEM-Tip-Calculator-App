@@ -21,36 +21,41 @@
           <div class="inMost">
             <div class="userIn">
               <label for="bill">Bill</label>
-              <label class="logo"><input type="number" name="bill" id="num" placeholder="00.00"><img src="images/icon-dollar.svg"></input></label>
+              <label class="logo"><input type="number" min="1" name="bill" class="num" id="bill" placeholder="00.00" required><img src="images/icon-dollar.svg"></input></label>
             </div>
           </div>
           <div class="inMost"> 
             <div class="userIn">
-              <label for="percTip">Select Tip %</label>
+              <label>Select Tip %</label>
               <div class="perc">
                 <ul>
                   <li>
-                    <label class="percent"><input type="radio" id="prePerc" name="percTip" value="5%" style="display:none;">5%</label>
+                    <input type="radio" id="opt1" name="percTip" value="5" style="display:none;">
+                    <label class="percent" for="opt1">5%</label>
                     
                   </li>
                   <li>
-                    <label class="percent"><input type="radio" id="prePerc" name="percTip" value="10%" style="display:none;">10%</label>
+                    <input type="radio" id="opt2" name="percTip" value="10" style="display:none;">
+                    <label class="percent" for="opt2">10%</label>
                     
                   </li>
                   <li>
-                    <label class="percent"><input type="radio" id="prePerc" name="percTip" value="15%" style="display:none;">15%</label>
+                    <input type="radio" id="opt3" name="percTip" value="15" style="display:none;">
+                    <label class="percent" for="opt3">15%</label>
                     
                   </li>
                   <li>
-                    <label class="percent"><input type="radio" id="prePerc" name="percTip" value="25%" style="display:none;">25%</label>
+                    <input type="radio" id="opt4" name="percTip" value="25" style="display:none;">
+                    <label class="percent" for="opt4">25%</label>
                     
                   </li>
                   <li>
-                    <label class="percent"><input type="radio" id="prePerc" name="percTip" value="50%" style="display:none;">50%</label>
-                    
+                    <input type="radio" id="opt5" name="percTip" value="50" style="display:none;">
+                    <label class="percent" for="opt5">50%</label>
+
                   </li>
                   <li>
-                    <input type="number" id="customPerc" name="percTip" placeholder=""><label class="custom-tip">Custom</label>
+                    <input type="number" min="1" class="customPerc" id="custom" name="percTip" placeholder="Custom">
                   
                   </li>
                 </ul>
@@ -60,13 +65,27 @@
           <div class="inMost">
             <div class="userIn">
               <label for="people">Number of People</label>
-              <label class="logo"><input type="number" name="people" id="num" placeholder="0"><img src="images/icon-person.svg"></input></label>
+              <label for="people" class="zero-label">Can't be zero</label>
+              <label class="logo"><input type="number" min="1" name="people" class="num" id="people" placeholder="0" required><img src="images/icon-person.svg"></input></label>
             </div>
           </div>
         </div>
           <div class="inner-container1">
               <div class="inner-container2">
-                
+                <div class="results">
+                  <div class="total">
+                    <span>Tip Amount <br> <span class="person">/ person</span></span>
+                    <output class="total-output">$0.00</output>
+                  </div>
+                  <div class="total">
+                    <span>Total <br> <span class="person">/ person</span></span>
+                    <output class="total-output">$0.00</output>                  </div>
+                </div>
+                <div class="reset-button">
+                  <div class="button-box">
+                    <button>RESET</button>
+                  </div>
+                </div>
               </div>
           </div>
       </div>
@@ -76,6 +95,9 @@
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
           Coded by <a href="#">Asantae Shelton</a>.
         </div> -->
+        <script>
+          main.js
+        </script>
     </body>
   </main>
 </html>
