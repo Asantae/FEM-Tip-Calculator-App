@@ -30,27 +30,27 @@
               <div class="perc">
                 <ul>
                   <li>
-                    <input type="radio" id="opt1" name="percTip" value="5" style="display:none;">
+                    <input type="radio" class="radio" id="opt1" name="percTip" value="5" style="display:none;">
                     <label class="percent" for="opt1">5%</label>
                     
                   </li>
                   <li>
-                    <input type="radio" id="opt2" name="percTip" value="10" style="display:none;">
+                    <input type="radio" class="radio" id="opt2" name="percTip" value="10" style="display:none;">
                     <label class="percent" for="opt2">10%</label>
                     
                   </li>
                   <li>
-                    <input type="radio" id="opt3" name="percTip" value="15" style="display:none;">
+                    <input type="radio" class="radio" id="opt3" name="percTip" value="15" style="display:none;">
                     <label class="percent" for="opt3">15%</label>
                     
                   </li>
                   <li>
-                    <input type="radio" id="opt4" name="percTip" value="25" style="display:none;">
+                    <input type="radio" class="radio" id="opt4" name="percTip" value="25" style="display:none;">
                     <label class="percent" for="opt4">25%</label>
                     
                   </li>
                   <li>
-                    <input type="radio" id="opt5" name="percTip" value="50" style="display:none;">
+                    <input type="radio" class="radio" id="opt5" name="percTip" data-price="50" style="display:none;">
                     <label class="percent" for="opt5">50%</label>
 
                   </li>
@@ -75,15 +75,15 @@
                 <div class="results">
                   <div class="total">
                     <span>Tip Amount <br> <span class="person">/ person</span></span>
-                    <output class="total-output">$0.00</output>
+                    <output class="total-output" id="tipAmount"></output>
                   </div>
                   <div class="total">
                     <span>Total <br> <span class="person">/ person</span></span>
-                    <output class="total-output">$0.00</output>                  </div>
+                    <output class="total-output" id="totalAmount"></output>                  </div>
                 </div>
                 <div class="reset-button">
                   <div class="button-box">
-                    <button>RESET</button>
+                    <button id="reset">RESET</button>
                   </div>
                 </div>
               </div>
@@ -95,9 +95,7 @@
           Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
           Coded by <a href="#">Asantae Shelton</a>.
         </div> 
-        <script>
-          main.js
-        </script>
+        <script src="main.js"></script>
     </body>
   </main>
 </html>
