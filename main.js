@@ -20,16 +20,18 @@ customPercentage.addEventListener('input', customTip);
 /* essential methods */
 function updateValue(inputBill){
     textTotal = inputBill.target.value;
+    textTotal = textTotal*1;
     finalOutput();
     
 }
 
 function updateTotal(inputPeople){
     people = inputPeople.target.value;
+    people = people*1;
     finalOutput();
 }
 
-/* this function cycles through the the radio buttons and takes the value of the buttion that  was clicked */
+/* this function cycles through the the radio buttons and takes the value of the button that  was clicked */
 function updateTip() {
     for (var c = 0; c < radio.length; c++) {
         while (radio[c].checked == true){
@@ -37,7 +39,6 @@ function updateTip() {
             break;
         }
     }
-    textTip = textTotal * percentage;
     finalOutput();
 }
 
@@ -47,15 +48,15 @@ function customTip(){
 
 /* this method outputs the total price and tip amount to the page */
 function finalOutput(){
-    parseFloat(totalPrice).toFixed(2);
+    textTip = textTotal * percentage;
     totalPrice = (textTip + textTotal) / people;
-    console.log('totalPrice ' + totalPrice);
-    console.log('textTotal ' + textTotal);
-    console.log('textTip ' + textTip);
-
+    if (totalPrice === Infinity) {
+        totalPrice = textTip + textTotal;
+    }
     document.getElementById('tipAmount').innerHTML = '$' + parseFloat(textTip).toFixed(2);
-    
     document.getElementById('totalAmount').innerHTML = '$' + parseFloat(totalPrice).toFixed(2);
 }
 
 /* create method that checks decimal places of input*/
+/* create reset button */
+/* finish custom tip input */
