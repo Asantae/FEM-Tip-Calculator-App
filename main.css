@@ -1,5 +1,6 @@
 /* changes margin and padding for the entire document */
 * {
+    user-select: none;
     font-family: 'Space Mono', monospace, Arial;
     font-weight: 700;
     box-sizing: border-box;
@@ -61,6 +62,7 @@ body {
     height: 415px;
     width: 400px;
     border-radius: 20px;
+    overflow: hidden;
 
 }
 
