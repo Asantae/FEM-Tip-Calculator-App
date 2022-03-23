@@ -20,6 +20,10 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 ## Overview
 
+This App is able to take the total price of something, how much you would like to tip as a percentage, how many people will be splitting the total price, and output accurate information based on what was given.
+Improvements that could be made include:
+- limiting what can be typed in the input sections
+
 ### The challenge
 
 Users should be able to:
@@ -42,7 +46,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://github.com/Asantae/FEM-Tip-Calculator-App]
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -54,11 +58,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Javascript
 
 ### What I learned
 
@@ -74,9 +74,11 @@ To see how you can add code snippets, see below:
   color: papayawhip;
 }
 ```
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+for (var i = 0; i < radio.length; i++) {
+    radio[i].onclick = updateTip;
+
 }
 ```
 

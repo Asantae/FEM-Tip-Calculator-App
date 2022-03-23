@@ -150,8 +150,12 @@ label {
     font-size: 16px;
 }
 
+
 .zero-label {
+    /* error color = hsla (14, 32%, 57%, 1) */
+    float: right;
     color: transparent;
+    transition: all 0.4s linear;
 }
 
 .percent {
@@ -222,7 +226,6 @@ input:checked + label {
     flex-direction: column;
     width: 400px;
     height: 250px;
-    
     padding-top: 40px;
 }
 
@@ -233,7 +236,6 @@ input:checked + label {
     color: white;
     width: 100%;
     height: 75px;
-    
     padding: 0 30px 0 30px;
 
 }
@@ -254,10 +256,11 @@ button {
     width: 340px;
     color: hsla(183, 100%, 15%, 1);
     font-size: 18px;
-    background-color: hsla(172, 67%, 45%, 1);
+    background-color: hsla(183, 79%, 24%, 1);
     border-radius: 4px;
     transition: .1s;
     border: none;
+    outline: none;
 }
 
 span {
@@ -269,8 +272,12 @@ span {
 }
 
 button:hover {
-    background-color: hsla(173, 60%, 77%, 1);
+    background-color: hsla(172, 67%, 45%, 1);
     cursor: pointer;
+}
+
+button:active {
+    background-color: hsla(173, 60%, 77%, 1);
 }
 
 output {
