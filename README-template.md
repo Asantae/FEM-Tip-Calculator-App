@@ -74,7 +74,7 @@ To see how you can add code snippets, see below:
   color: papayawhip;
 }
 ```
-
+Found a js function that can loop through radio buttons when they are clicked on!
 ```js
 for (var i = 0; i < radio.length; i++) {
     radio[i].onclick = updateTip;
