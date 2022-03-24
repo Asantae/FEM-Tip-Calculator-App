@@ -155,7 +155,7 @@ label {
     /* error color = hsla (14, 32%, 57%, 1) */
     float: right;
     color: transparent;
-    transition: all 0.4s linear;
+    transition: all 0.1s linear;
 }
 
 .percent {
@@ -196,7 +196,7 @@ label {
 
 #people {
     outline: transparent solid 3px;
-    transition: all 0.4s linear;
+    transition: all 0.1s linear;
 
 }
 
@@ -307,25 +307,90 @@ output {
     }
     .container {
         flex-direction: column;
-        height: 900px;
-        width: 350px;
+        height: 670px;
+        width: 330px;
     }
     .inner-container1 {
-        height: 500px;
         width: 100%;
+        padding-bottom: 20px;
     }
     .inner-container2 {
-        width: 325px;
+        width: 300px;
+        height: 245px;
     }
     .attribution {
         display: none;
     }
+    .userIn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 17px;
+        padding-right: 17px;
+        flex-wrap: wrap;
+    }
     ul {
-        width: 300px;
-        justify-content: space-around;
+        width: 270px;
+    }
+    .inMost{
+        width: 335px;
+        justify-content: center;
+    }
+    #bill {
+        width: 270px;
+    }
+    #people {
+        width: 270px;
+    }
+    .logo img {
+        padding-top: 10px;
+    }
+    label {
+        font-size: 13px;
+    }
+    .zero-label{
+        padding-right: 30px;
     }
     .percent {
-        
+        width: 120px;
     }
+    .customPerc {
+        width: 120px;
+    }
+    .results {
+        font-size: 60%;
+        width: 280px;
+        padding-top: 8px;
+        height: 175px;
+
+    }
+    .total {
+        padding: 0;
+        padding-left: 27px;
+    }
+    .reset-button {
+        height: 75px;
+
+    }
+    button {
+        width: 260px;
+    }
+    .person {
+        font-size: 10px;
+    }
+    output {
+         font-size: 30px;
+     }
+    span {
+        font-size: 12px;
+    }
+    #first-container {
+        padding-left: 29px;
+    }
+    
+    
 }
 

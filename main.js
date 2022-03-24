@@ -97,6 +97,8 @@ function formReset() {
     percentage = 0;
     totalPrice = 0;
     checkTotal = 0;
+    document.querySelector('.zero-label').style = null;
+    document.querySelector('#people').style = null;
     myForm.reset();
     finalOutput();
 }
