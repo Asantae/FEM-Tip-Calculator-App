@@ -217,8 +217,6 @@ input:checked + label {
     color: hsla(183, 100%, 15%, 1);
 }
 
-/********** NEED TO FINISH ERROR MESSAGE FOR NUMBER OF PEOPLE *********/
-
 /*This section adjusts the divs and content affecting the right side or 'inner-content2' */
 .results {
     display: flex;
